@@ -11,6 +11,11 @@ Test your installation:
 ```
 $ virtualenv --version
 ```
+or 
+
+```
+pythone.exe -m venv %USERPROFILE%\venvs\demoenv39
+```
 
 Using virtualenv
 
