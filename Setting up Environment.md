@@ -1,4 +1,4 @@
-## Setting up Python Virtual Environment
+## Setting up Python Virtual Environment using virtualenv
 
 We use a module named virtualenv which is a tool to create isolated Python environments. virtualenv creates a folder which contains all the necessary executables to use the packages that a Python project would need.
 
@@ -48,4 +48,37 @@ Once you are done with the work, you can deactivate the virtual environment by t
 
 ```
 (virtualenv_name)$ deactivate
+```
+
+## Setting up Python Virtual Environment using Anaconda
+
+
+Anaconda is an open source software that contains Jupyter, spyder, etc that are used for large data processing, data analytics, heavy scientific computing. Anaconda works for R and Python programming language. Package versions are managed by the package management system conda. 
+
+Step 1: Check if conda is installed in your path.
+
+* Open up the anaconda command prompt.
+* Type conda -V  and press enter.
+* If the conda is successfully installed in your system you should see a similar output.
+```
+conda -V
+```
+
+Step 2: Update the conda environment 
+
+Enter the following in the anaconda prompt.
+```
+conda update conda
+```
+
+Step 3: Set up the virtual environment
+
+* Type conda search “^python$”  to see the list of available python versions.
+* Now replace the envname with the name you want to give to your virtual environment and replace x.x with the python version you want to use.
+```
+conda create -n envname python=x.x anaconda
+```
+
+```
+conda create -n ds_env python=3.9 anaconda
 ```
