@@ -35,3 +35,17 @@ Now after creating virtual environment, you need to activate it. Remember to act
 $ source virtualenv_name/bin/activate
 ```
 
+Once the virtual environment is activated, the name of your virtual environment will appear on left side of terminal. This will let you know that the virtual environment is currently active.
+
+Now you can install dependencies related to the project in this virtual environment. For example if you are using Django 1.9 for a project, you can install it like you install other packages.
+
+```
+(virtualenv_name)$ pip install Django==1.9
+```
+
+The Django 1.9 package will be placed in virtualenv_name folder and will be isolated from the complete system.
+Once you are done with the work, you can deactivate the virtual environment by the following command:
+
+```
+(virtualenv_name)$ deactivate
+```
