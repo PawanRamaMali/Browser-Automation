@@ -82,3 +82,36 @@ conda create -n envname python=x.x anaconda
 ```
 conda create -n ds_env python=3.9 anaconda
 ```
+
+Step 4: Activating the virtual environment
+
+* To see the list of all the available environments use command conda info -e
+* To activate the virtual environment, enter the given command and replace your given environment name with envname
+```
+conda activate envname
+```
+
+When conda environment is activated it modifies the PATH and shell variables points specifically to the isolated Python set-up you created.
+
+
+Step 5: Installation of required packages to the virtual environment
+
+Type the following command to install the additional packages to the environment and replace envname with the name of your environment.
+```
+conda install -n yourenvname package
+```
+
+Step 6: Deactivating the virtual environment
+
+To come out of the particular environment type the following command. The settings of the environment will remain as it is.
+```
+conda deactivate
+```
+
+Step 7: Deletion of virtual environment
+
+If you no longer require a virtual environment. Delete it using the following command and replace your environment name with envname
+```
+conda remove -n envname -all
+```
+
